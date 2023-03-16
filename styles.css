@@ -1,0 +1,129 @@
+:root{
+    /* principal */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.card {
+    width: 600px;
+    height: 50vh;
+    background-color: var(--White);
+    border-radius: 7px;
+    display: flex;
+  }
+
+.textos{
+    width: 50%;
+    margin: 2rem;
+}
+
+.perfume{
+    font-size: 13px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.produto-nome{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.descriçao-texto{
+    color: grey;
+    margin: 0;
+}
+
+.preços{
+    display: flex;
+    align-items: center;
+}
+
+.preço-principal{
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    margin: 2rem 0;
+}
+
+.preço-secundario{
+    margin-left: 1rem;
+    text-decoration:line-through;
+    color: grey;
+}
+
+.botao-item{   
+    color: var(--White);
+    border: none;
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 10px;
+    background: url('images/icon-cart.svg') no-repeat 1rem var(--Dark-cyan);
+    width: 90%;
+}
+
+.img{
+    border-radius: 7px 0 0 7px;
+    width: 270px;
+    background: url(images/image-product-desktop.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 720px) {
+
+    .perfume{
+        margin: 1.5rem 0;
+    }
+
+    .card {
+      flex-direction: column;
+      width: 90vw;
+      height: 90vh;
+    }
+
+    .textos{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .botao-item{
+        width: 100%;
+    }
+
+    .descriçao-texto{
+      width: auto;
+      height: 70%;
+      line-height: 1.3rem;
+    }
+
+    .img {
+        border-radius: 7px 7px 0 0;
+        width: 100%;
+        height: 40%;
+        background: url(images/image-product-mobile.jpg) center no-repeat;
+        background-size: cover;
+    }
+  }
+  
